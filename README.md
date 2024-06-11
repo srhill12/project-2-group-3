@@ -1,13 +1,25 @@
 # project-2-group-3 : Retail Paint Store Sales Prediction
 
 # Summary
-Our work in this project has produced predictions for the 5 retails stores selling paint products in a specific region of the US. Should be noted that there was a clear observation related to Covid in the stores data that were open before and after this global pandemic. Results show us that 3 out of 5 stores appear to show upward trends within the data. Prophet data models indicated several stores will continue in an upward trend as well. The GARCH model for each store reflected there is a reasonable amount of volatility in the data given the up and down nature of the seasonal sales and duration of store being open. Our Linear regression model reflect similar results with 3 of 5 stores continuing on an upward trend. Overall all stores do show they are profitable and will continue to produce for the business, but with this data they can now focus advertising efforts on the stores that have not been producing as well as others. 
+The project successfully identified the most suitable forecasting model (SARIMA) for paint sales across multiple stores. While initial models like linear regression and ARIMA had limitations, the SARIMA model effectively captured seasonality and provided accurate forecasts. The use of Prophet as an alternative model further validated these findings. Despite facing data and technical challenges, the project laid a strong foundation for future enhancements, including the integration of external data and real-time forecasting capabilities. By addressing these areas, the forecasting system can become a valuable tool for inventory management, sales optimization, and demand anticipation. Should be noted that there was a clear observation related to Covid in the stores data that were open before and after this global pandemic. Overall all stores do show they are profitable and will continue to produce for the business, but with this data they can now focus advertising efforts on the stores that have not been producing as well as others. 
 
 # Background:
-Team objective was to analyze retail paint store sales data to create models that would predict future possibilities for sales. We were able to gather data from the retail store and transformed into a usable format to process with sevel data models. The information produced can potentially be used by the store owners to create plans to generate sales. 
+Team objective was to analyze retail paint store sales data to create models that would predict future possibilities for sales. We were able to gather data from the retail store and transformed into a usable format to process with several data models. The information produced can potentially be used by the store owners to create plans to generate sales. 
 
 # Requirements: 
-In order to properly run this steps in the workbooks you will need to have the following dependencies installed. 
+In order to properly run these steps in the workbooks you will need to have the following dependencies installed. Once installed you will need to pull the required libraries into your workbook. 
+
+Installs: 
+- pip install pandas
+- pip install numpy
+- pip install pathlib
+- pip install matplotlib
+- pip install datetime
+- pip install bokeh
+- pip install sklearn
+- pip install prophet
+- pip install statsmodels
+- pip install arch
 
 Pandas support: 
 - import pandas as pd
