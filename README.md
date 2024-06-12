@@ -1,6 +1,6 @@
 # project-2-group-3 : Retail Paint Store Sales Prediction
 
-# Summary
+# Summary:
 The project successfully identified the most suitable forecasting model (SARIMA) for paint sales across multiple stores. While initial models like linear regression and ARIMA had limitations, the SARIMA model effectively captured seasonality and provided accurate forecasts. The use of Prophet as an alternative model further validated these findings. Despite facing data and technical challenges, the project laid a strong foundation for future enhancements, including the integration of external data and real-time forecasting capabilities. By addressing these areas, the forecasting system can become a valuable tool for inventory management, sales optimization, and demand anticipation. Should be noted that there was a clear observation related to Covid in the stores data that were open before and after this global pandemic. Overall all stores do show they are profitable and will continue to produce for the business, but with this data they can now focus advertising efforts on the stores that have not been producing as well as others. 
 
 # Background:
@@ -50,7 +50,7 @@ Prediction Models:
 - from statsmodels.tsa.arima.model import ARIMA
 - from statsmodels.tsa.statespace.sarimax import SARIMAX
 
-# Data Elements
+# Data Elements:
 This project was specifically utlizing time series data that was extracted from a financial system for retail sales. Common fields used were Year, Sales(in dollars), Gallons, Month, week of year. For use of standardization we transformed the year/month/week of year into a single date time column and extracted just the specific columns needed. We utilized datetime/sales/gallons in our models to permit trending and proper plotting visually over time. 
 All data files utlized for this project are in the /data directory within the project. 
 - original data file extracted from client system (allstores_2007topresent_final)
@@ -63,7 +63,23 @@ All data files utlized for this project are in the /data directory within the pr
     - Store 4 had data points going back to 2022
     - Store 5 had data points going back to 2014
 
-# Future Enhancements
+# Result examples: 
+- Bokeh trends
+![alt text](images/all_stores.png)
+- Linear Regression
+![alt text](images/Linear_Regression.png)
+- ARIMA
+![alt text](images/ARIMA_model.png)
+- SARIMA
+![alt text](images/SARIMA_model.png)
+- Prophet
+![alt text](images/Prophet_model.png)
+- GARCH
+![alt text](images/GARCH_model.png)
+
+
+
+# Future Enhancements:
 If our team was to continue with this effort we have agreed the following would be a benefit to the data and information produced: 
 - Data Enhancement:
     - Integrate more detailed external data (e.g., economic forecasts, advanced weather data).
@@ -79,7 +95,7 @@ If our team was to continue with this effort we have agreed the following would 
     - Gather feedback from stakeholders to refine the model and improve its usefulness.
 
 
-# Supporting Information
+# Supporting Information: 
 - file share location for data sharing: 
 https://drive.google.com/drive/folders/1ikmymqF7VuWBbDtaPKaG0Hb8fGMo3vbP
 
@@ -96,3 +112,8 @@ https://bokeh.org/
     - https://machinelearningmastery.com/develop-arch-and-garch-models-for-time-series-forecasting-in-python/
     - https://arch.readthedocs.io/en/latest/univariate/introduction.html
     - https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html
+    - https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
+    - https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6
+    - https://www.geeksforgeeks.org/arima-vs-sarima-model/
+    - https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html
+    - https://www.statsmodels.org/dev/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html
