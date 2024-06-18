@@ -1,4 +1,4 @@
-# project-2-group-3 : Retail Paint Store Sales Prediction
+# Retail Paint Store Sales Prediction
 
 # Summary:
 The project successfully identified the most suitable forecasting model (SARIMA) for paint sales across multiple stores. While initial models like linear regression and ARIMA had limitations, the SARIMA model effectively captured seasonality and provided accurate forecasts. The use of Prophet as an alternative model further validated these findings. Despite facing data and technical challenges, the project laid a strong foundation for future enhancements, including the integration of external data and real-time forecasting capabilities. By addressing these areas, the forecasting system can become a valuable tool for inventory management, sales optimization, and demand anticipation. Should be noted that there was a clear observation related to Covid in the stores data that were open before and after this global pandemic. Overall all stores do show they are profitable and will continue to produce for the business, but with this data they can now focus advertising efforts on the stores that have not been producing as well as others. 
